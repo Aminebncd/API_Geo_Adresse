@@ -1,25 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <title>Api Geo VS</title>
+    <title>API Geo Adresse</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <main>
-      <h1>Api Geo Adresse</h1>
-      <input
-        type="text"
-        class="cp"
-        name="codepostal"
-        id="codepostal"
-        placeholder="Saisir un code postal..."
-      />
-      <select class="ville" name="ville" id="ville"></select>
-    </main>
-    <script src="js/script.js"></script>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">API Geo Adresse</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control mb-3 cp"
+            placeholder="Saisir un code postal..."
+            id="codepostal"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <select class="custom-select" id="ville"></select>
+        </div>
+      </div>
+      <div id="map" class="mt-4"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
