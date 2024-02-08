@@ -14,26 +14,28 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
   </head>
-  <body>
-    <div class="container mt-5">
-      <h1 class="text-center mb-4">API Geo Adresse</h1>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <input
-            type="text"
-            class="form-control mb-3 cp"
-            placeholder="Saisir un code postal..."
-            id="codepostal"
-          />
+  <body class="body">
+    <main>
+      <div class="container mt-5">
+        <h1 class="text-center mb-4">API Geo Adresse</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control mb-3 cp"
+              placeholder="Saisir un code postal..."
+              id="codepostal"
+            />
+          </div>
         </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <select class="custom-select" id="ville"></select>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <select class="custom-select" id="ville"></select>
+          </div>
         </div>
+        <div id="map" class="mt-4"></div>
       </div>
-      <div id="map" class="mt-4"></div>
-    </div>
+    </main>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="/js/script.js"></script>
